@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // exercise
+        // 1. deklarasi kan variable dengan nilai 5 kemudian tambahkan dengan 5 menggunakan assignment operator
+        // dan variable tersebut kurangi 3 dengan assignment operator juga
+        let z = 5
+        z += 5
+        z -= 3
+        console.log("z :", z)
+
+        // 2. deklarasi kan variable array dengan nilai "A","B","C","D", kemudian masukan nilai "F" dengan assignment operator
+        let array = ["A","B","C","D"]
+        array [5] = "F"
+        console.log("isi array : ", array)
+
+        // 3. deklarasi kan variable object dengan property { nama : "nama" } kemudian masukan age : "28" dengan assigment operator
+        let object = {
+            nama : "cindy"
+        }
+        object.age = "28"
+        console.log("isi object :", object)
+
+        // 4. dari variable array sebelum nya, ambil value dengan index 2 menggunakan destructuring
+        let [ firstArray, secondArray, thirdArray, fourthArray ] = array
+        console.log("index 2 : ", thirdArray)
+
+        // 5. dari variable object sebelum nya, ambil property nama dengan destructuring
+        let { nama } = object
+        console.log("nama : ", nama)
+
+        // 6. bandingkan 5 lebih besar dari 6
+        console.log(5>6)
+
+        // 7. bandingkan 7 lebih kecil dari 5
+        console.log(7<5)
+
+        // 8. buat penjumlahan 5 + 5 dan 5 dikali 5
+        console.log(5+5 && 5*5)
+
+        // 9. deklarasi kan variable logika and dan hrus menghasilkan true
+        let a = 5
+        let b = 8
+        let c = 5
+        let d = 10
+        console.log(a=c && b<=10)
+
+        // 10. deklarasi kan varibale logika OR dan hrus menghasilkan true
+        // soal ini pake variable dari soal nomor 9
+        console.log(c>=10 || a!=d)
+
+        // 11. sambung 2 string berikut dalam 1 console.log "Saya" "Belajar" "Javascript"
+        //ngikut contoh di modul
+        let study = "Saya "
+        study += "Belajar "
+        study += "Javascript"
+        console.log(study)
+
+        // 12. bkin 1 ternary operator dengan 2 kondisi
+        //buat nonton film horror
+        const input = prompt("Masukin umur :")
+        alert(`Umur : ${input}`)
+        parseInt(input)
+
+        const BolehNonton= input<17 ? "Ga boleh nonton film horror" : "Boleh nonton film horror"
+        console.log(BolehNonton)
+
+        // 13. bkin 1 ternary operator dengan 3 kondisi
+        //film horror apa yang ditonton
+        const input2 = prompt("Masukin umur :")
+        alert(`Umur : ${input2}`)
+        parseInt(input2)
+
+        const NontonApa = input2>=17 && input2<21 ? "Nonton The Conjuring aja" : input2>=21 ? "Boleh nonton sekelas The Exorcist & Midsommar" : "Mending nonton kartun"
+        console.log(NontonApa)
+    </script>
+</body>
+</html>
